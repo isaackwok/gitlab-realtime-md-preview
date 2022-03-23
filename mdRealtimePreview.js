@@ -15,8 +15,7 @@ function handleOnChangePreview(e) {
 }
 
 function setPreviewHTML(html, element) {
-    const mdPreviewArea = document.querySelector(MD_PREVIEW_AREA_SELECTOR)
-    mdPreviewArea.innerHTML = html
+    element.innerHTML = html
 }
 
 function getCsrfToken() {
@@ -56,7 +55,7 @@ async function fetchMdPreview(text) {
 const mdFields = document.querySelectorAll(MD_FIELD_CLASSNAME)
 console.log(mdFields)
 
-mdFields.forEach((field, idx) => {
+mdFields.forEach((field) => {
     const inputArea = field.querySelector('textarea')
     inputArea.parentElement?.appendChild(createPreviewDiv(MD_PREVIEW_AREA_CLASS))
     inputArea.oninput = handleOnChangePreview
