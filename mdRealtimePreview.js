@@ -19,7 +19,7 @@ function setPreviewHTML(html, element) {
 }
 
 function getCsrfToken() {
-    const csrfMetaTag = document.querySelector('meta[name="csrf-token"')
+    const csrfMetaTag = document.querySelector('meta[name="csrf-token"]')
     const csrfToken = csrfMetaTag.getAttribute('content')
     return csrfToken
 }
