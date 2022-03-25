@@ -1,12 +1,18 @@
 {
-    "name": "Gitlab MD Realtime Preview",
-    "description": "Preview your markdown in realtime on Gitlab!",
-    "version": "0.0.1",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": ["*://*.gitlab.com/*"],
-            "js": ["mdRealtimePreview.js"]
-        }
-    ]
-  }
+  "name": "Gitlab MD Realtime Preview",
+  "description": "Preview your markdown in realtime on Gitlab!",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.gitlab.com/*"
+      ],
+      "js": [
+        "scripts/funcs.js",
+        "scripts/consts.js",
+        "scripts/index.js"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Gitlab Realtime Markdown Preview
 A Chrome/Edge extension for displaying realtime preview of markdown when leaving comments.
-<img src="demo.gif">
+<img src="img/demo.gif">
 
 ## Setup
 Please follow [these steps](https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked) to add the extension to your Chrome/Edge browser.
