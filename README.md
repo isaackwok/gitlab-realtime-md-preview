@@ -10,3 +10,7 @@ Please follow [these steps](https://developer.chrome.com/docs/extensions/mv3/get
     - Alternatively, open this page by clicking on the `Chrome` menu, hovering over `More Tools` then selecting `Extensions`
 2. Enable `Developer Mode` by clicking the toggle switch next to Developer mode.
 3. Click the `Load unpacked` button and select the extension directory.
+
+## TODO
+1. Instead of calling GitLab's API on **EVERY INPUT EVENT**, call it on-demand or even parse the markdown locally.
+2. Refactor to `TypeScript`
